@@ -3,46 +3,18 @@
     <!--    头部导航条-->
     <HeaderSearch/>
     <!-- 订单中心  -->
-    <div class="indent-box same-flex">
-      <div class="indent-left-box">
-        <img class="header-img" src="../assets/mmexport1580082034804.jpg" alt="">
-        <div class="indent-id">12345</div>
-        <div class="indent-member">开通会员</div>
-        <div id="tabs" class="indent-btn-box">
-          <div class="indent indent-focus">全部订单</div>
-          <div class="indent">待付款</div>
-          <!-- <div class="indent">待发货</div> -->
-          <div class="indent">待收货</div>
-          <div class="indent">待评价</div>
-        </div>
-      </div>
-      <div class="indent-right-box">
-        <div class="indent-title-box same-flex">
-          <div class="commodity-list1">商品</div>
-          <div class="same1">单价</div>
-          <div class="same1">数量</div>
-          <div class="same1">实付款</div>
-          <div class="same1">商品操作</div>
-          <div class="same1">交易状态</div>
-          <div class="same1">交易操作</div>
-        </div>
-        <div id="content"></div>
-        <div class="pageLimit-box">
-          <ul id="pageLimit"></ul>
-        </div>
-      </div>
-    </div>
+    <IndentBox/>
     <!--    尾部导航条-->
-    <div class="bottem-nav-box">
-      <div class="row clearfix bottem">
+    <div class="bottom-nav-box">
+      <div class="row clearfix bottom">
         <!--        正品保障+购物指南-->
         <div class="col-md-12 column">
           <!--            图标+第一块文字-->
-          <div class="bottem-text text1">
+          <div class="bottom-text text1">
             <img src="../assets/WechatIMG90.png" alt="">
             <span>正品保障，提供发票</span><br><br>
-            <br><span class="bottem-text-title">购物指南</span>
-            <div class="bottem-text-content">
+            <br><span class="bottom-text-title">购物指南</span>
+            <div class="bottom-text-content">
               <span>购物流程</span>
               <br><span>会员介绍</span>
               <br><span>生活旅行团购</span>
@@ -51,11 +23,11 @@
             </div>
           </div>
           <!--            图标+第二块文字-->
-          <div class="bottem-text text1">
+          <div class="bottom-text text1">
             <img src="../assets/WechatIMG90.png" alt="">
             <span>正品保障，提供发票</span><br><br>
-            <br><span class="bottem-text-title">购物指南</span>
-            <div class="bottem-text-content">
+            <br><span class="bottom-text-title">购物指南</span>
+            <div class="bottom-text-content">
               <span>购物流程</span>
               <br><span>会员介绍</span>
               <br><span>生活旅行团购</span>
@@ -64,11 +36,11 @@
             </div>
           </div>
           <!--            图标+第三块文字-->
-          <div class="bottem-text text1">
+          <div class="bottom-text text1">
             <img src="../assets/WechatIMG90.png" alt="">
             <span>正品保障，提供发票</span><br><br>
-            <br><span class="bottem-text-title">购物指南</span>
-            <div class="bottem-text-content">
+            <br><span class="bottom-text-title">购物指南</span>
+            <div class="bottom-text-content">
               <span>购物流程</span>
               <br><span>会员介绍</span>
               <br><span>生活旅行团购</span>
@@ -77,11 +49,11 @@
             </div>
           </div>
           <!--            图标+第四块文字-->
-          <div class="bottem-text1 text1">
+          <div class="bottom-text1 text1">
             <img src="../assets/WechatIMG90.png" alt="">
             <span>正品保障，提供发票</span><br><br>
-            <br><span class="bottem-text-title">购物指南</span>
-            <div class="bottem-text-content">
+            <br><span class="bottom-text-title">购物指南</span>
+            <div class="bottom-text-content">
               <span>购物流程</span>
               <br><span>会员介绍</span>
               <br><span>生活旅行团购</span>
@@ -95,14 +67,13 @@
         <!--        底部介绍-->
         <div class="col-md-12 column footer">
           <ul>
-            <span>关于我们</span>
-            <span>联系我们</span>
-            <span>联系客服</span>
+            <span>关于我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+            <span>联系我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+            <span>联系客服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span>
             <span>营销中心</span>
           </ul>
           <ul>
             <span>地址：浙江省宁波市鄞州区柏庭养老管理集团主楼5楼 邮编：31500 电话00-000000000 邮箱：bangjifans.com</span>
-
           </ul>
           <ul>
             <span>京ICP备08001421号京公网安备110108007702</span>
@@ -115,14 +86,90 @@
 
 <script>
   import HeaderSearch from '@/components/HeaderSearch.vue'
+  import IndentBox from '@/views/Indent/IndentBox.vue'
 
   export default {
     name: 'Indent',
-    components: {HeaderSearch},
-    component: HeaderSearch
+    components: {IndentBox, HeaderSearch},
   }
 </script>
 
 <style scoped>
+  .bottom-nav-box {
+    width: 100%;
+    height: 480px;
+    background-color: #eaeaea;
+    margin-top: 60px;
+    position: relative;
+  }
 
+  .bottom {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .bottom-text {
+    float: left;
+    display: inline-block;
+    margin-right: 98px;
+    margin-top: 44px;
+  }
+
+  .bottom-text1 {
+    float: left;
+    display: inline-block;
+    margin-top: 44px;
+  }
+
+  .bottom-text-content {
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+
+  .bottom-text-title {
+    width: 88px;
+    height: 23px;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: -2px;
+    color: #000000;
+    margin-left: 53px;
+  }
+
+  /*二维码*/
+  .erweima {
+    width: 124px;
+    height: 124px;
+    background-color: #ffffff;
+    float: right;
+    margin-right: -16px;
+    margin-top: -100px;
+  }
+
+  /*底部文字*/
+  .footer {
+    margin-top: 360px;
+    display: flex;
+    color: black;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-60%);
+  }
+
+  .footer ul {
+    text-align: center;
+    margin: 6px;
+  }
+
+  .footer ul span {
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #000000;
+  }
 </style>

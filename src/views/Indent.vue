@@ -1,25 +1,7 @@
 <template>
   <div class="box">
     <!--    头部导航条-->
-    <div class="header-box">
-      <div class="clearfix top">
-        <div class="col-md-12">
-          <span class="leftText">欢迎你！登入|<a>免费注册</a></span>
-          <span class="rightText"><a>首页</a>|<a>我的订单</a>|<a>我的购物车</a>|<a>个人中心</a></span>
-        </div>
-        <div class="search">
-          <img src="../assets/WechatIMG91.png" alt="">
-          <span>
-            <label>
-              <input type="text"/>
-            </label>
-            <button>搜索</button>
-          </span>
-        </div>
-      </div>
-    </div>
-
-
+    <HeaderSearch/>
     <!-- 订单中心  -->
     <div class="indent-box same-flex">
       <div class="indent-left-box">
@@ -50,8 +32,6 @@
         </div>
       </div>
     </div>
-
-
     <!--    尾部导航条-->
     <div class="bottem-nav-box">
       <div class="row clearfix bottem">
@@ -134,8 +114,12 @@
 </template>
 
 <script>
+  import HeaderSearch from '@/components/HeaderSearch.vue'
+
   export default {
-    name: 'Indent'
+    name: 'Indent',
+    components: {HeaderSearch},
+    component: HeaderSearch
   }
 </script>
 

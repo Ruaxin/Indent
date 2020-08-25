@@ -19,7 +19,3 @@
     components: {FootBox, IndentBox, HeaderSearch},
   }
 </script>
-
-<style scoped>
-
-</style>

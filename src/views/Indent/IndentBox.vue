@@ -7,7 +7,6 @@
       <div id="tabs" class="indent-btn-box">
         <div class="indent indent-focus">全部订单</div>
         <div class="indent">待付款</div>
-        <!-- <div class="indent">待发货</div> -->
         <div class="indent">待收货</div>
         <div class="indent">待评价</div>
       </div>
